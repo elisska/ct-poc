@@ -21,6 +21,5 @@ TBD
 * Table in MemSQL must exists and be the same name
 * Column names in HCatalog and MemSQL should be the same
 * Staging table can be used with `--staging-table`
-* Incremental inserts/updates are allowed with sqoop. `--update-key` can be specified in command to allow merge into target table 
-	-- COLUMN NAMES IN HCATALAG AND MEMSQL MUST BE THE SAME!!!!
+* Incremental inserts/updates are allowed with sqoop. `--update-key` can be specified in command to allow merge into target table
 
