@@ -3,7 +3,7 @@
 1. Provision 3 machines.  We have used CentOS 7.1 x86_64 with cloud-init (HVM) (ami-91e416fa),
 m4.xlarge (4 vCPUs and 16 GiB) and default 8 GB of General Purpose SSD (GP2).
 
-The following inbound rules have been created:
+   The following inbound rules have been created:
 
 ```
 All traffic | All | All | <IP range of the subnetwork>
@@ -61,7 +61,7 @@ CREATE TABLE `ratings_large_text` (
   `tms4` varchar(20));
 ```
 
-For each new test you need to drop the whole database (truncating the tables will
+  For each new test you need to drop the whole database (truncating the tables will
 leave all physical files) and when create it again:
 
 ```
