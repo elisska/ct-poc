@@ -10,7 +10,7 @@ ln -s streamsets-datacollector-1.4.0.0 sdc
 rm -rf streamsets-datacollector-all-1.4.0.0.tgz
 ```
 
-2. Setup JDBC connector to MemSQL database and add Hadoop configs to StreamSets resources:
+2. Setup JDBC connector to MemSQL database and Hive and add Hadoop configs to StreamSets resources:
 
 ```
 cd
@@ -25,6 +25,9 @@ grant codebase "file:///opt/sdc-extras/-" {
   permission java.security.AllPermission;
 };
 DELIM
+cp ~/hive-jdbc.jar /opt/sdc-extras/streamsets-datacollector-jdbc-lib/lib/
+cp ~/hadoop-auth.jar /opt/sdc-extras/streamsets-datacollector-jdbc-lib/lib/
+cp ~/hadoop-common.jar /opt/sdc-extras/streamsets-datacollector-jdbc-lib/lib/
 ln -s /etc/hadoop/conf /opt/sdc/resources/hadoop-conf
 ```
 
