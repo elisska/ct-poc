@@ -1,4 +1,4 @@
-## NOtes
+## Notes
 
 We used custom Kafka producer to read data from HDFS and send the data to Kafka topic. 
 
