@@ -3,7 +3,7 @@
 1. Setup a new Kafka topic.  Login to the host where Kafka is installed,
 go to Kafka bin folder and run:
 
-```
+   ```
 ./kafka-topics.sh --create --zookeeper <Zookeeper Quorum (comma-separated list of host:port)> --replication-factor 1 --partitions 3 --topic <topic name>
 ```
 
@@ -19,7 +19,7 @@ go to Kafka bin folder and run:
 
 7. Specify Column Spec JSON in the following format:
 
-```
+   ```
 [
     {
         "column_type": "<integer|double|string>",
