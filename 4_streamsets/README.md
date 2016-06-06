@@ -12,5 +12,5 @@
 
 ## StreamSets notes
 
-* Data can be read from HDFS with pipeline Cluster Batch mode. So that once all data copied, the pipeline stops. 
-
+* If origin is **Hadoop FS**, then data can be read from HDFS with pipeline Cluster Batch mode. So that once all data copied, the pipeline stops. To process new files within the same directory, you should restart the pipeline.
+* 
