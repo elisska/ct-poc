@@ -22,7 +22,7 @@ cd memsql-loader
 ./memsql-loader log
 ```
 
-4.Run load in the first window:
+4. Run load in the first window:
 
    ```
 ./memsql-loader load -D <database name> -t <table name> -u root -h <IP or hostname of MemSQL Master Aggregator> -P 3306 --hdfs-host <IP or hostname of HDFS name node> --hdfs-user hdfs --debug --fields-terminated "," --fields-enclosed '"' --fields-escaped '\\' --columns <comma-separated list of column names> <HDFS path>
