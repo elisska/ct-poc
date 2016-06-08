@@ -4,7 +4,7 @@
 
 2. Click HDFS CSV.
 
-3. Specify HDFS Server (either hostname or IP address), HDFS Port (default one is 8020)
+3. Specify HDFS Server (either hostname or IP address), HDFS Port (8020)
 and File or Folder to Import and click Continue.  For example:
 /apps/hive/warehouse/poc.db/ratings_large_text/*.  Please note that a folder name
 must be followed by a wildcard.
@@ -27,6 +27,7 @@ about 4 minutes to import about 5,696 MB of original HDFS data
 * 3:37
 * 4:09
 * 3:36
+* Average: 3:47
 
 ## Limitations:
 

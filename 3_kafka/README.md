@@ -7,6 +7,12 @@ go to Kafka bin folder and run:
 ./kafka-topics.sh --create --zookeeper <Zookeeper Quorum (comma-separated list of host:port)> --replication-factor 1 --partitions 3 --topic <topic name>
 ```
 
+   For example:
+
+   ```
+./kafka-topics.sh --create --zookeeper ip-172-31-34-179.ec2.internal:2181,ip-172-31-46-193.ec2.internal:2181,ip-172-31-46-195.ec2.internal:2181 --replication-factor 1 --partitions 3 --topic hdfs-topic
+```
+
 2. Go to MemSQL Ops UI, click Data Sources, click Streamliner and then click Add Pipeline button.
 
 3. Specify Name, Description and Batch Interval (default and minimum interval is 1 second).
@@ -23,7 +29,7 @@ go to Kafka bin folder and run:
 [
     {
         "column_type": "<integer|double|string>",
-        "name": "<field name>"
+        "name": "<column name>"
     },
     ...
 ]
